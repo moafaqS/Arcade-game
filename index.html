@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body onload="time()">
+    
+<header>
+  <h1>Arcade Game</h1>
+    <div id="scorePanel">
+        <p>Score : <strong id="score">0</strong></p> 
+        <p>colide : <strong id="colide">0</strong></p> 
+    </div>
+    <div id="timerDiv"><p id="timer"></p></div>
+</header>
+    
+    
+    <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+     
+        
+        <!-- Score Information -->
+        <div class="modal-body">
+         <p>score : <strong id="Fscore"></strong></p>
+         <p>colide : <strong id="Fcolide"></strong></p>
+        </div>
+        
+       
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="playAgain()">play again</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
