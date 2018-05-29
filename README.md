@@ -6,3 +6,4 @@ to play this game , you have to move the player using the arrows(up,down,left, a
 
 ### External librarie
 - jQuery
+-3school website
