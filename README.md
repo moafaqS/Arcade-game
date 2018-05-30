@@ -1,8 +1,13 @@
 # Arcade Game
 ## description 
-Udacity project .
-Arcade Game .
-the third project .
+- Udacity third project .
+- Arcade Game .
+
+## install the game 
+```bash
+git clone https://github.com/moafaqS/Arcade-game.git
+```
+after you download the files , simply run index.html to enjoy the game 
 
 ## play the game 
 the game will automatically start when the page is loaded
