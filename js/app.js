@@ -2,7 +2,7 @@
 var Enemy = function(x,y,speed) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
-    
+    'use strict';
     this.x = x;
     this.y = y;
     this.speed = speed;
@@ -19,6 +19,7 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter - 
     // which will ensure the game runs at the same speed for - 
     // all computers. - 
+    'use strict';
             this.speed = Math.random() *400;
             this.x = this.x + this.speed * dt;
     
@@ -50,6 +51,7 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 var Player = function(x , y)
 {
+    'use strict';
     this.x = x;
     this.y = y;
     this.sprite = 'images/char-boy.png';
@@ -59,7 +61,7 @@ var Player = function(x , y)
 
 var score = 1 ; 
 Player.prototype.update = function() {
-    
+    'use strict';
     if(this.y < -10 )   // if player reach the sea
         {
             this.x = 200;
@@ -73,12 +75,13 @@ Player.prototype.update = function() {
 
 // Draw the enemy on the screen, required method for game
 Player.prototype.render = function() {
+    'use strict';
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
 Player.prototype.handleInput = function(input) {
     
-   
+   'use strict';
      if(input == "left" && this.x > 0)       
             {
                 this.x -= 100;
@@ -110,16 +113,18 @@ Player.prototype.handleInput = function(input) {
 var player = new Player(200,320);   // create object player
 
 // create enemies objects
-var enemy1 = new Enemy(0,60);  
-var enemy2 = new Enemy(0,140);
-var enemy3 = new Enemy(0,230);
 
+var allEnemies = [];
+for(var i=0;i<3;i++){
+    var enemy=new Enemy(-300,40+i*90);
+    allEnemies.push(enemy);
+}
 
-var allEnemies = [enemy1, enemy2, enemy3];
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
+    'use strict';
     var allowedKeys = {
         37: 'left',
         38: 'up',
@@ -135,6 +140,7 @@ document.addEventListener('keyup', function(e) {
 var TimeInsecond = 60 ;
 function time()  
 {
+    'use strict';
             var myVar = setInterval(function() {
               myTimer();
             }, 1000);   
@@ -145,6 +151,7 @@ function time()
 
 
 function myTimer() {
+    'use strict';
     if(TimeInsecond == 0 ) {
         
         
@@ -161,6 +168,7 @@ function myTimer() {
 
 function playAgain()
 {
+    'use strict';
     location.reload();
 }
 
