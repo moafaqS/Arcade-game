@@ -6,7 +6,7 @@ the third project .
 
 ## play the game 
 the game will automatically start when the page is loaded
-Click [here](https://moafaqs.github.io/Arcade-game/) to play the game 
+ , Click [here](https://moafaqs.github.io/Arcade-game/) to play the game 
 
 ## instructions
 
